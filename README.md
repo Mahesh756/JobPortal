@@ -1,4 +1,4 @@
-****JobPortal Project
+**JobPortal Project**
 
   This JobPortal project demonstrates a clean and scalable implementation of stateless, token-based, and role-based authentication using Spring Boot. It covers the following key features:
 
