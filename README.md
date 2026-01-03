@@ -1,13 +1,36 @@
-**JobPortal Project**
+# JobPortal
 
-  -- This JobPortal project demonstrates a clean and scalable implementation of stateless, token-based, and role-based authentication using Spring Boot. It covers the following key features:
+## What is this
+JobPortal is a Spring Boot application that demonstrates stateless JWT authentication and role-based access control.
 
-  **Stateless Authentication:** No server-side session storage; authentication relies entirely on tokens.
-  
-  **Token-Based Security:** Uses JWT (JSON Web Tokens) to securely manage user sessions.
-  
-  **Role-Based Access Control:** Grants access based on user roles, ensuring secure and organized authorization.
-  
-  **Scalable Design:** Follows clean architecture principles for maintainability and extensibility.
+## Requirements
+- Java 11+
+- Maven
+- Spring Boot
 
-This project is ideal for learning secure Spring Boot application design, implementing JWT authentication, and managing role-based access control in modern web applications.
+## Quick Start
+1. Clone:
+   ```bash
+   git clone https://github.com/Mahesh756/JobPortal.git
+   cd JobPortal
+   ```
+2. Set environment variables:
+   - JWT_SECRET (a strong secret) - for now I hardcoded in the project
+3. Run:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+   or
+   ```bash
+   java -jar target/*.jar
+   ```
+
+## Common Endpoints
+- POST /api/auth/login — get JWT token
+- GET /api/jobs/all — list jobs (may require auth)
+- POST /api/jobs — to post the job
+- POST /api/applications/apply/{userId}/{jobId} — apply a job
+
+
+## Contact
+if any issues - contact me maheshmaahi67@gmail.com
